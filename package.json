@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-risxss",
+  "name": "eslint-plugin-m-risxss",
   "version": "1.1.1",
   "description": "Various XSS-hunter ESLint rules",
   "author": {
