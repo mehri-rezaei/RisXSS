@@ -8,7 +8,7 @@ const DANGEROUS_MESSAGE = 'XSS potentially found: use of v-bind.';
 
 const isVBIND = node => {
   const { name } = node;
-  if (name === 'html' || name.name === 'html') return true;
+  if (name === 'bind' || name.name === 'bind') return true;
   return false;
 };
 
