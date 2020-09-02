@@ -21,18 +21,9 @@ ruleTester.run('catch-potential-xss-v-bind', rule, {
   valid: [
   ]
 	invalid: [
-    testCase(`
-      <template>
-        <div class="content">
-          <div v-bind="'message'" />
-        </div>
-      </template>
-    `),
 	 testCase(`
-      <template>
-        <div class="content">
-          <div v-bind: />
-        </div>
-      </template>
+     <a v-bind:href="userProvidedUrl">
+  click me
+</a>
     `),
 });
