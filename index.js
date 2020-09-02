@@ -17,7 +17,9 @@ module.exports = {
       plugins: ['risxss'],
       rules: {
         'risxss/catch-potential-xss-react': 'error',
-        'risxss/catch-potential-xss-vue': 'error'
+        'risxss/catch-potential-xss-vue': 'error',
+        'risxss/catch-potential-xss-v-bind': 'error'
+				
       }
     }
   }
